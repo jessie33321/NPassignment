@@ -7,6 +7,7 @@ serverSocket.bind(('', 67))
 
 #Receive Discover
 serverSocket.recvfrom(2048)
+print('Discover...')
 
 #Offer
 OP = b'\x02'
@@ -31,6 +32,7 @@ serverSocket.sendto(msg,('255.255.255.255',68))
 
 #Receive Request
 serverSocket.recvfrom(2048)
+print('Request...')
 
 #Ack
 OP = b'\x02'
