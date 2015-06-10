@@ -1,0 +1,36 @@
+{% for info in list %}
+	<div>
+	name	: {{ info.name }}<br>
+    gender	: {{ info.gender }}<br>
+	height	: {{ info.height }}<br>
+	weight	: {{ info.weight }}<br>
+	-------------------------------------------------------
+	</div>
+{% endfor %}
+
+	<h3>新增帳號</h3>
+	<form action="" method="post">
+			{%csrf_token%}
+		<label for="name">姓名:</label>
+		<input type="text" name="name" value="" id="name"><br>
+		<label for="password">密碼:</label>
+		<input type="password" name="password" value="" id="password"><br>
+		<label for="gender">性別:</label>
+		<input type="text" name="gender" value="" id="gender"><br>
+		<label for="height">身高:</label>
+		<input type="height" name="height" value="" id="height"><br>
+		<label for="weight">體重:</label>
+		<input type="weight" name="weight" value="" id="weight"><br>
+		<input type="submit" value="送出" />
+	</form>
+	
+	<h3>刪除帳號</h3>
+	<form action="" method="post">
+			{%csrf_token%}
+		<label for="dname">姓名:</label>
+		<input type="text" name="dname" value="" id="dname"><br>
+		<input type="submit" value="送出" />
+	</form>
+	
+	<br>
+	<a href="/login2/">登出</a>

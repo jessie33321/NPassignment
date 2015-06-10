@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> 註冊 Register </title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+		<h2>註冊 Register</h2>
+        <form action="" method="post">
+				{%csrf_token%}
+            <label for="username">用戶名稱:</label>
+            <input type="text" name="username" value="" id="username"><br>
+            <label for="password">用戶密碼:</label>
+            <input type="password" name="password" value="" id="password"><br>
+			<label for="gender">性別:</label>
+            <input type="gender" name="gender" value="" id="gender"><br>
+			<label for="height">身高:</label>
+            <input type="height" name="height" value="" id="height"><br>
+			<label for="weight">體重:</label>
+            <input type="weight" name="weight" value="" id="weight"><br>
+			<br>
+            <input type="submit" value="提交" />
+			<a href="/login2/">登入</a>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> 修改 </title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <form action="" method="post">
+				{%csrf_token%}
+            <label for="gender">性別:</label>
+            <input type="text" name="gender" value="" id="gender"><br>
+            <label for="height">身高:</label>
+            <input type="height" name="height" value="" id="height"><br>
+			<label for="weight">體重:</label>
+            <input type="weight" name="weight" value="" id="weight"><br>
+            <input type="submit" value="送出" />
+        </form>
+    </body>
+</html>
